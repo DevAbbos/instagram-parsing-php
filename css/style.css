@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	background:-webkit-linear-gradient(90deg, #fd11d3,#ff4e74,#ff9c47,#d1cf6d);
+	height: 100vh;
+}
+.container{
+	margin: 0 auto;
+	padding:  20px 50px;
+}
+.navigation{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.input_username{
+	width: 320%;
+	height: 90px;
+	margin-left: 20px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	padding-left: 30px;
+	background: #AB3C24;
+
+	border-radius: 30px;
+}
+.input_username::placeholder{
+	color: #fff;
+	font-family: 'Indie Flower', cursive;;
+}
+.input_username:focus{
+	color: #Fff;
+}
+.title{
+	text-align: center;
+	color: #a52a2a;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.submit_ok{
+	position:  absolute;
+	top: 89px;
+	right: 50px;
+	width: 10%;
+	height: 90px;
+	background: #4CAF50;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 20px;
+	font-family: Arial;
+	cursor: pointer;
+}
+.result{
+	width: 90%;
+	height: 50vh;
+	margin-left: 7%;
+	-webkit-box-shadow: 0px 5px 10px 19px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 19px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 19px rgba(34, 60, 80, 0.2);
+}
+.navigation_result{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-left: 4%;
+}
+.bio{
+	width: 200px;
+}
+.username, .full_name, .bio, .followers, .follow, .id{
+	display: flex;
+	flex-direction: column;
+	padding: 0px 20px 0px 20px;
+	align-items: center;
+	margin-top: 50px;
+}
+.bio_par{
+	padding: 10px;
+	font-size: 17px;
+	color: #202020;
+} 
+
+@media screen and (max-width: 900px){
+	.wrapper{
+		height: 300vh;
+		overflow: hidden;
+	}
+	.navigation{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	}
+	.input_username{
+		width:120%;
+		margin: 20px 0px 100px 0px;
+	}
+	.title{
+		padding: 0px 0px 20px 0px;
+	}
+	.submit_ok{
+		position: absolute;
+		top:80%;
+		right: 30%;
+		width: 30%;
+
+	}
+	.result{
+		height: 190vh;
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+	.navigation_result{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 4%;
+}
+}
